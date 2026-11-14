@@ -1,0 +1,12 @@
+{
+  "addons": {
+    "twitch-reklamfri@arn0ld2000": {
+      "updates": [
+        {
+          "version": "1.0.1",
+          "update_link": "https://github.com/arn0ld2000/twitch-reklamfri/releases/download/v1.0.1/twitch-reklamfri-1.0.1.xpi"
+        }
+      ]
+    }
+  }
+}

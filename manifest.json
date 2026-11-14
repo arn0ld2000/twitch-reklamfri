@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Twitch Reklamfri",
+  "version": "1.0.1",
+  "description": "Eget tillägg som byter bort Twitch-reklam mot en reklamfri reservström, och döljer/tystar reklam som ändå slinker igenom.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.twitch.tv/*",
+        "https://m.twitch.tv/*",
+        "https://player.twitch.tv/*"
+      ],
+      "js": [
+        "inject.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": true
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "twitch-reklamfri@arn0ld2000",
+      "strict_min_version": "128.0",
+      "update_url": "https://raw.githubusercontent.com/arn0ld2000/twitch-reklamfri/main/updates.json"
+    }
+  }
+}
